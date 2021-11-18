@@ -1,0 +1,47 @@
+// Task 1 - add new fields name with value "Felix", and age - 7
+const objWithNewFields = {};
+
+// code here
+//add new fields
+objWithNewFields.name = "Felix";
+objWithNewFields.age = 7;
+//check that objWithNewFields has new fields
+console.log(objWithNewFields);
+// Task 1 - end
+
+// Task 2 - add new field sum, that should contain sum of fields a + b
+const objWithSum = {
+  a: 10,
+  b: 10
+};
+// code here
+//first - check that objWithSum = { a: 10, b: 10 }
+console.log(objWithSum);
+//than add new field sum, that should contain sum of fields a + b
+objWithSum.sum = objWithSum.a + objWithSum.b;
+console.log("Sum of fields a + b =", objWithSum.sum);
+//last-check that objWithSum = { a: 10, b: 10, sum: 20 }
+console.log(objWithSum);
+
+// Tsk 2 - end
+
+// Task 3 - rewrite nums array with [2,3] array
+const objWithNums = {
+  nums: [1]
+};
+
+// code here
+//check that objWithNums = { nums: [ 1 ] }
+console.log(objWithNums);
+objWithNums.nums = [2, 3];
+//check that objWithNums = { nums: [ 2, 3 ] }
+console.log(objWithNums);
+
+// Tsk 3 - end
+// not needed
+const objWithRes = {
+  n: 3,
+  res: "n is equal 3"
+};
+
+export { objWithNewFields, objWithSum, objWithRes, objWithNums };
